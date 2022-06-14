@@ -6,10 +6,10 @@ if type "pypy" > /dev/null; then
 	export PYPY=pypy
 fi
 
-RAW_TEXT='data/DBLP.txt'
-AUTO_LABEL=0
+RAW_TEXT='data/indian_reviews.txt'
+AUTO_LABEL=1
 WORDNET_NOUN=0
-DATA_LABEL='data/DBLP.label'
+DATA_LABEL='data/indian_auto.label'
 KNOWLEDGE_BASE='data/wiki_labels_quality.txt'
 KNOWLEDGE_BASE_LARGE='data/wiki_labels_all.txt'
 
@@ -30,12 +30,12 @@ rm -rf results
 mkdir tmp
 mkdir results
 
-if [ ! -e data/DBLP.txt ]; then
-	echo ===Downloading dataset=== 
-	curl http://dmserv2.cs.illinois.edu/data/DBLP.txt.gz --output data/DBLP.txt.gz
+#if [ ! -e data/DBLP.txt ]; then
+#	echo ===Downloading dataset=== 
+#	curl http://dmserv2.cs.illinois.edu/data/DBLP.txt.gz --output data/DBLP.txt.gz
 #	wget http://dmserv4.cs.illinois.edu/DBLP.txt.gz -O data/DBLP.txt.gz
-	gzip -d data/DBLP.txt.gz -f
-fi
+#	gzip -d data/DBLP.txt.gz -f
+#fi
 
 # preprocessing
 ./bin/from_raw_to_binary_text ${RAW_TEXT} tmp/sentencesWithPunc.buf
