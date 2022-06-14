@@ -8,7 +8,7 @@ fi
 
 RAW_TEXT='data/indian_reviews.txt'
 AUTO_LABEL=1
-WORDNET_NOUN=0
+WORDNET_NOUN=1
 DATA_LABEL='data/indian_auto.label'
 KNOWLEDGE_BASE='data/wiki_labels_quality.txt'
 KNOWLEDGE_BASE_LARGE='data/wiki_labels_all.txt'
