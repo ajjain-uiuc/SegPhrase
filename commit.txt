@@ -1,1 +1,3 @@
 git push https://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@github.com/ajjain-uiuc/SegPhrase.git/
+https://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@github.com/ajjain-uiuc/SegPhrase.git/
+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

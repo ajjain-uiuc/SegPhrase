@@ -7,9 +7,9 @@ if type "pypy" > /dev/null; then
 fi
 
 RAW_TEXT='data/indian_reviews.txt'
-AUTO_LABEL=1
+AUTO_LABEL=0
 WORDNET_NOUN=1
-DATA_LABEL='data/indian_auto.label'
+DATA_LABEL='data/indian_label.label'
 KNOWLEDGE_BASE='data/wiki_labels_quality.txt'
 KNOWLEDGE_BASE_LARGE='data/wiki_labels_all.txt'
 
